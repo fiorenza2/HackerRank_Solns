@@ -2,7 +2,8 @@
 # The trick is to accumulate totals on the children nodes so no recursion is required
 
 class Node():
-
+    
+    # This explicitely declares what slots your object will have, saving memory due to allocation
     __slots__ = ['value', 'children']
 
     def __init__(self):
